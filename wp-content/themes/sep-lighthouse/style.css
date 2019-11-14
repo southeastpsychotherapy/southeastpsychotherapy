@@ -1,0 +1,543 @@
+/*
+Theme Name: SEP Lighthouse
+Theme URI: http://southeastpsychotherapy.com
+Author: Nick Phillipps
+Author URI: http://nickphillipps.co.uk
+Description: Theme designed specifically for http://southeastpsychotherapy.com
+Version: 1.0
+*/
+/* line 1, assets/scss/_typography.scss */
+body, html {
+  font-family: Lehigh, serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* line 9, assets/scss/_typography.scss */
+h1, h2, h3, h4 {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 14, assets/scss/_typography.scss */
+h1 {
+  font-size: 2rem;
+}
+
+/* line 18, assets/scss/_typography.scss */
+h2 {
+  font-size: 1.5rem;
+}
+
+/* line 22, assets/scss/_typography.scss */
+h3 {
+  font-size: 1.5rem;
+}
+
+/* line 26, assets/scss/_typography.scss */
+h4 {
+  font-size: 1rem;
+}
+
+/* line 33, assets/scss/_typography.scss */
+a {
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  color: #3A71B0;
+}
+/* line 37, assets/scss/_typography.scss */
+a:hover {
+  color: #000;
+}
+
+/* line 43, assets/scss/_typography.scss */
+ul {
+  padding-left: 1rem;
+  text-align: left;
+}
+
+/* line 50, assets/scss/_typography.scss */
+.intro {
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'Lehigh';
+  src: url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-Light.eot");
+  src: url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-Light.eot#iefix") format("embedded-opentype"), url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-Light.woff") format("woff"), url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lehigh';
+  src: url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-SemiBold.eot");
+  src: url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-SemiBold.eot#iefix") format("embedded-opentype"), url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-SemiBold.woff") format("woff"), url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lehigh';
+  src: url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-Regular.eot");
+  src: url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-Regular.eot#iefix") format("embedded-opentype"), url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-Regular.woff") format("woff"), url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lehigh';
+  src: url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-Black.eot");
+  src: url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-Black.eot#iefix") format("embedded-opentype"), url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-Black.woff") format("woff"), url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lehigh';
+  src: url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-Bold.eot");
+  src: url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-Bold.eot#iefix") format("embedded-opentype"), url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-Bold.woff") format("woff"), url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lehigh';
+  src: url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-Thin.eot");
+  src: url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-Thin.eot#iefix") format("embedded-opentype"), url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-Thin.woff") format("woff"), url("/wp-content/themes/sep-lighthouse/assets/fonts/Lehigh-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+/* line 1, assets/scss/_layout.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 3, assets/scss/_layout.scss */
+body, html {
+  margin: 0;
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 32rem) {
+  /* line 9, assets/scss/_layout.scss */
+  body, html {
+    margin: 0;
+    font-size: 24px;
+  }
+}
+/* line 15, assets/scss/_layout.scss */
+.main {
+  padding: 0 1rem;
+}
+/* line 2, assets/scss/_utilities.scss */
+.main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 20, assets/scss/_layout.scss */
+.wrap {
+  max-width: 42rem;
+  margin: auto;
+}
+
+/* line 25, assets/scss/_layout.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 29, assets/scss/_layout.scss */
+.profile-img {
+  display: block;
+  max-width: 60%;
+  margin: 1em auto;
+  border-radius: 100%;
+}
+
+/* line 37, assets/scss/_layout.scss */
+hr {
+  margin: 2em auto;
+  height: 4px;
+  background: black;
+  border-radius: 2px;
+  border: none;
+  display: block;
+  width: 80%;
+}
+
+/* line 47, assets/scss/_layout.scss */
+.caption {
+  top: -1rem;
+  position: relative;
+  font-size: 1rem;
+}
+
+/* line 54, assets/scss/_layout.scss */
+.ctaBlock {
+  text-align: center;
+}
+/* line 57, assets/scss/_layout.scss */
+.ctaBlock span {
+  display: block;
+}
+
+/* line 62, assets/scss/_layout.scss */
+.contact-form input[type=submit], .button {
+  display: inline-block;
+  padding: .5rem 2rem;
+  border: solid 4px black;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: inherit;
+  font-family: inherit;
+  background: #ffffff;
+  transition: background .5s, color .5s;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* line 77, assets/scss/_layout.scss */
+.contact-form input[type=submit]:hover, .button:hover {
+  background: #3A71B0;
+  color: #ffffff;
+}
+
+/* line 84, assets/scss/_layout.scss */
+.contact-form input[type=email], .contact-form input[type=text] {
+  height: 2rem;
+  font-size: 1rem;
+}
+
+/* line 1, assets/scss/_header.scss */
+.header {
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-top: #3A71B0 0.25rem solid;
+  box-shadow: 0 0 0.5rem 0.5rem #ffffff;
+  width: 100%;
+  height: 4.25rem;
+  z-index: 2;
+}
+
+/* line 14, assets/scss/_header.scss */
+.main {
+  margin-top: 5rem;
+}
+
+/* line 18, assets/scss/_header.scss */
+.logo {
+  background: url(/wp-content/themes/sep-lighthouse/assets/images/mainLogo.svg);
+  display: inline-block;
+  width: 12em;
+  height: 4em;
+  background-size: contain;
+  text-indent: -100%;
+  white-space: nowrap;
+  z-index: 10;
+  position: absolute;
+}
+
+/* line 1, assets/scss/_footer.scss */
+.footerwrap {
+  padding: 0 1rem 1rem;
+  background: #b8dbfe;
+  border-top: solid 6px #000;
+  margin-top: 2rem;
+}
+
+/* line 12, assets/scss/_footer.scss */
+.footer {
+  position: relative;
+}
+
+/* line 16, assets/scss/_footer.scss */
+.footer-nav {
+  text-align: left;
+  padding: 0;
+  width: 70%;
+  width: calc(70% - 1rem);
+  display: inline-block;
+}
+
+/* line 26, assets/scss/_footer.scss */
+.ukcp-logo {
+  display: block;
+  width: 30%;
+  width: calc(30% - 1rem);
+  max-width: 10rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: .75rem;
+  color: black;
+  text-decoration: none;
+}
+
+/* line 40, assets/scss/_footer.scss */
+.copyright {
+  text-align: right;
+}
+
+/* line 1, assets/scss/_navigation.scss */
+.main-nav {
+  width: 110%;
+  height: 100%;
+  position: fixed;
+  top: 2rem;
+  left: -5%;
+  padding: 5rem 0;
+  z-index: 1;
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+  background: white;
+  opacity: 0;
+  transform: scale(0.5);
+  visibility: hidden;
+  transition: transform 0.35s cubic-bezier(0.22, 0.68, 0, 1.7), opacity 0.5s cubic-bezier(0.22, 0.68, 0, 1.7), visibility 0.35s cubic-bezier(0.22, 0.68, 0, 1.7);
+}
+/* line 18, assets/scss/_navigation.scss */
+.main-nav .menu-item {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 1.5rem;
+}
+/* line 22, assets/scss/_navigation.scss */
+.main-nav .menu-item a {
+  text-decoration: none;
+}
+/* line 27, assets/scss/_navigation.scss */
+.main-nav.visible {
+  transform: scale(0.95);
+  opacity: 1;
+  visibility: visible;
+  transition: transform 0.35s cubic-bezier(0.22, 0.68, 0, 1.7), opacity 0.5s cubic-bezier(0.22, 0.68, 0, 1.7), visibility 0.35s cubic-bezier(0.22, 0.68, 0, 1.7);
+  -webkit-transition: transform 0.35s cubic-bezier(0.22, 0.68, 0, 1.7), opacity 0.5s cubic-bezier(0.22, 0.68, 0, 1.7), visibility 0.35s cubic-bezier(0.22, 0.68, 0, 1.7);
+}
+
+/* line 40, assets/scss/_navigation.scss */
+.menu-item {
+  list-style: none;
+}
+
+/* line 45, assets/scss/_navigation.scss */
+.menu-button {
+  font-size: 1em;
+  font-weight: 600;
+  display: inline-block;
+  line-height: 4em;
+  float: right;
+  border: none;
+  background: none;
+  padding-right: 1rem;
+  position: absolute;
+  right: 0;
+  z-index: 5;
+}
+/* line 58, assets/scss/_navigation.scss */
+.menu-button img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 1.5em;
+  width: 1.5em;
+  top: -0.125em;
+  position: relative;
+  margin-left: .25em;
+  transition: transform 0.35s cubic-bezier(0.22, 0.68, 0, 1.7);
+  -webkit-transition: transform 0.35s cubic-bezier(0.22, 0.68, 0, 1.7);
+}
+
+/* line 71, assets/scss/_navigation.scss */
+.active img {
+  transform: rotate(90deg);
+  transition: transform 0.35s cubic-bezier(0.22, 0.68, 0, 1.7);
+  -webkit-transition: transform 0.35s cubic-bezier(0.22, 0.68, 0, 1.7);
+}
+
+@media only screen and (min-width: 61em) {
+  /* line 80, assets/scss/_navigation.scss */
+  .menu-button {
+    display: none;
+  }
+
+  /* line 84, assets/scss/_navigation.scss */
+  .main-nav {
+    width: auto;
+    height: auto;
+    float: right;
+    display: block;
+    padding: 1rem 0;
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+  }
+  /* line 96, assets/scss/_navigation.scss */
+  .main-nav .menu-item {
+    font-size: 0.75rem;
+    display: inline-block;
+    margin-right: 1rem;
+    padding-bottom: .25rem;
+  }
+  /* line 101, assets/scss/_navigation.scss */
+  .main-nav .menu-item a {
+    padding-bottom: .25rem;
+    border-bottom: solid .125rem;
+  }
+}
+/* line 1, assets/scss/_home.scss */
+.home .main {
+  text-align: center;
+}
+
+/* line 6, assets/scss/_home.scss */
+.links {
+  max-width: 32rem;
+}
+
+/* line 9, assets/scss/_home.scss */
+.page-links {
+  font-weight: bold;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+/* line 17, assets/scss/_home.scss */
+.page-links {
+  width: 100%;
+  width: calc( 50% - 1rem );
+  height: 1em;
+  height: calc((50vw * 1.418 ) / 2 - 0.5rem );
+  max-height: calc( (( 16rem - 0rem) * 1.418 ) / 2 - 1.5rem );
+  background-size: cover;
+  background-position: 0 0;
+  border: solid black 3px;
+  margin-bottom: 1em;
+  position: relative;
+  float: left;
+  margin: 0.5rem;
+}
+/* line 2, assets/scss/_utilities.scss */
+.page-links:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 32, assets/scss/_home.scss */
+.page-links .p-link {
+  background: black;
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: white;
+  z-index: 1;
+}
+
+/* line 44, assets/scss/_home.scss */
+.page-links.what-is-psychotherapy {
+  background-image: url("/wp-content/themes/sep-lighthouse/assets/images/lighthouse-tall.png");
+  height: calc( ( 50vw - 2.5rem ) * 1.418 + 3.5em);
+  max-height: calc( ( 16rem - 2.5rem ) * 1.418 + 1.5em);
+}
+@media only screen and (min-width: 32rem) {
+  /* line 52, assets/scss/_home.scss */
+  .page-links.what-is-psychotherapy:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("/wp-content/themes/sep-lighthouse/assets/images/lighthouseDark-tall.png");
+    background-size: cover;
+    background-position: 0 0;
+    transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+  }
+  /* line 63, assets/scss/_home.scss */
+  .page-links.what-is-psychotherapy:hover:after, .page-links.what-is-psychotherapy:active:after {
+    opacity: 0;
+  }
+}
+
+/* line 72, assets/scss/_home.scss */
+.page-links.getting-started {
+  background-image: url("/wp-content/themes/sep-lighthouse/assets/images/oasts.png");
+}
+@media only screen and (min-width: 32rem) {
+  /* line 76, assets/scss/_home.scss */
+  .page-links.getting-started:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("/wp-content/themes/sep-lighthouse/assets/images/oastsDark.png");
+    background-size: cover;
+    background-position: 0 0;
+    transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+  }
+  /* line 87, assets/scss/_home.scss */
+  .page-links.getting-started:hover:after, .page-links.getting-started:active:after {
+    opacity: 0;
+  }
+}
+
+/* line 94, assets/scss/_home.scss */
+.page-links.contact {
+  background-image: url("/wp-content/themes/sep-lighthouse/assets/images/map.png");
+}
+@media only screen and (min-width: 32rem) {
+  /* line 99, assets/scss/_home.scss */
+  .page-links.contact:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("/wp-content/themes/sep-lighthouse/assets/images/mapDark.png");
+    background-size: cover;
+    background-position: 0 0;
+    transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+  }
+  /* line 110, assets/scss/_home.scss */
+  .page-links.contact:hover:after, .page-links.contact:active:after {
+    opacity: 0;
+  }
+}
+
+/* line 1, assets/scss/_about.scss */
+.list1 {
+  margin-bottom: 0;
+}
+
+/* line 5, assets/scss/_about.scss */
+.list2 {
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 34em) {
+  /* line 10, assets/scss/_about.scss */
+  .symptoms {
+    width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* line 16, assets/scss/_about.scss */
+  .list1 {
+    margin-bottom: 1rem;
+  }
+
+  /* line 20, assets/scss/_about.scss */
+  .list2 {
+    margin-top: 1rem;
+    padding-left: 4rem;
+  }
+
+  /* line 25, assets/scss/_about.scss */
+  .list1, .list2 {
+    width: 16rem;
+    float: left;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
